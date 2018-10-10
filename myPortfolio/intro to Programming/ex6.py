@@ -26,21 +26,27 @@ a=input("Enter your Name:")
 print ("hi!"+a)
 
 b=input("Enter you Age please:")
-print ("sir", "your age is:"+b)
 
+age=18
+
+
+if b < age:
+    print ("young man, your age is:"+b)
+elif b > age:
+    print ("old man, your age is:"+b)
 
 c = input("Height:")
-print (a, "and your Height is:"+c)
+print ("and your Height is:"+c)
 
 d = input("Weight:")
-print (a, "and your Weight is:"+d)
+print ("and your Weight is:"+d)
 
 
 e = input("Eye colour:")
-print (a, "and your eye color is:"+e)
+print ("and your eye color is:"+e)
 
 f = input("Hair colour:")
-print (a, "and your hair color is:"+f)
+print ("and your hair color is:"+f)
 
 
 
@@ -49,3 +55,5 @@ print ("your height is:   " +c)
 print ("your weight is: " +d)
 print ("your eye colour is:   " +e)
 print ("your hair color is:   " +f)
+
+
