@@ -42,33 +42,48 @@ Save your work as ex7.py and commit regularly to GitHub.
 
 """
 
-
-print('Enter your annual salary:')
-a = input()
-print('Salary:, ' + a)
-
-print('Enter the percent of your salary to save, as a decimal number:')
-b = input()
-print('10% =, ' + b)
-
-print('Enter the cost of your dream home:')
-c = input()
-print('property price:, ' + c)
-
-print('Number of months:')
-d = input()
-print('Number of months:, ' + d)
-
+"""
 # variables 
-annual_salary =
+
 monthly_salary =
-portion_saved =
+
 current_savings =
 annual_return =
 
 portion_depoist = 
-total_cost =
 
+
+"""
+
+
+
+
+
+# input & output
+
+
+print('Enter the cost of your dream home:')
+total_cost = input()
+print('property price:, ' + total_cost)
+
+print('Enter your annual salary:')
+annual_salary = input()
+print('Annual Salary:, ' + annual_salary)
+
+
+print('Enter the percent of your salary to save, as a decimal number:')
+portion_saved = input()
+
+print('10% =',)
+
+print('Depoist required:')
+
+print('Number of months:')
+
+
+
+
+"""
 # while loop
 
 i = 1
@@ -86,4 +101,5 @@ else:
   print()
 
 
+"""
 
