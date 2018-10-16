@@ -22,38 +22,28 @@ Save the work as ex6.py, make regular commits to GitHub
 """
 print ("Exercise ex6.py - intro to programming\n")
 
-a=input("Enter your Name:")
-print ("hi!"+a)
+name = input("Enter your name: ")
+print("Your name is", name, ".")
 
-b=input("Enter you Age please:")
-
-age=18
-
-
-if b < age:
-    print ("young man, your age is:"+b)
-elif b > age:
-    print ("old man, your age is:"+b)
-
-c = input("Height:")
-print ("and your Height is:"+c)
-
-d = input("Weight:")
-print ("and your Weight is:"+d)
+age = int(input("Enter your age: "))
+if age > 18:
+    print(name, "is", age, "years old.")
 
 
-e = input("Eye colour:")
-print ("and your eye color is:"+e)
-
-f = input("Hair colour:")
-print ("and your hair color is:"+f)
+height = float(input("Enter your Height(cm):"))
+if height > 0:
+    print("That's a positive size!")
 
 
 
-
-print ("your height is:   " +c)
-print ("your weight is: " +d)
-print ("your eye colour is:   " +e)
-print ("your hair color is:   " +f)
+weight = float(input("Enter your Weight(kg):"))
+if weight > 0:
+    print("That's a positive weight!")
 
 
+
+eyes = input("Eye colour:")
+print ("and your eye color is:"+eyes)
+
+hair = input("Hair colour:")
+print ("and your hair color is:"+hair)
