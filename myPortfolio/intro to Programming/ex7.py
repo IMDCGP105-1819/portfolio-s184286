@@ -5,7 +5,7 @@ Task 3
 You’ve graduated and need to move to London to start your new job,
 you’ve decided that you want to start saving to buy a house.
 You’re going to have to save for several years to be able to afford a deposit.
-Write a program that will help you calculate how long it will take you to save up for a deposit.
+Write a program that will help you calculate how long it will take you to save up for a deposit. savings value
 
 1. The cost of the house is total_cost
 2. The portion of the total cost needed for a deposit is portion_deposit, to make that easier, assume it to be 20% (0.20).
@@ -26,7 +26,7 @@ You will want your main variables to be floats, so you should cast user inputs t
 To help get you started, here is a rough outline of the stages you should probably follow:
 
     • Retrieve user input. For this task, you can assume the users will enter valid input (they won’t enter a string when you request an int).
-    • Initialize some state variables. You should decide what information you need – be careful about values that represent annual amounts and those that represent monthly amounts. 
+    • Initialize some state variables. You should decide what information you need – be careful about values that represent annual amounts and those that represent monthly amounts.
 
 Try different inputs and see how long it takes to save for a down payment.
 
@@ -37,69 +37,29 @@ Enter the percent of your salary to save, as a decimal: .10
 Enter the cost of your dream home: 1000000
 Number of months: 183
 
-Save your work as ex7.py and commit regularly to GitHub. 
+Save your work as ex7.py and commit regularly to GitHub.
 
 
 """
 
-"""
-# variables 
+#inputs
 
-monthly_salary =
+annual_salary=float(input("Enter your annual salary:"))                                     # income - yr value
+portion_saved=float(input("Enter the percent of your salary to save, as a decimal: "))      # *10% monthly savings
+total_cost=float(input("Enter the cost of your dream home:"))                               # property value
 
-current_savings =
-annual_return =
+# values
+monthly_salary=annual_salary/12                                                             # income - monthly value
 
-portion_depoist = 
-
-
-"""
-
-
-
+portion_deposit= total_cost * 0.20                                                                        # 20% depoist value
+current_savings=0                                                                            #current savings value
+r= (current_savings * 0.4)/12
+months_required=0                                                                            # number of months required to save for a depoist.
 
 
-# input & output
-
-
-print('Enter the cost of your dream home:')
-total_cost = input()
-print('property price:, ' + total_cost)
-
-print('Enter your annual salary:')
-annual_salary = input()
-print('Annual Salary:, ' + annual_salary)
-
-
-print('Enter the percent of your salary to save, as a decimal number:')
-portion_saved = input()
-
-print('10% =',)
-
-print('Depoist required:')
-
-print('Number of months:')
-
-
-
-
-"""
-# while loop
-
-i = 1
-while i < 6:
-  print(i)
-  i += 1
-
-#if statement
-
-if :
-  print()
-elif :
-  print()
-else:
-  print()
-
-
-"""
-
+#sum
+while(current_savings< total_cost * portion_deposit):
+    current_savings+=monthy_salary*portion_saved
+    current_savings+=current_savings*r/12
+    months_required+=1
+print(f"Total number of months required to save for a depoist: {months_required}")             # final output.
