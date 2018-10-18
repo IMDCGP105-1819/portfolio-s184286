@@ -15,3 +15,21 @@ should ask the user for a high and low value before running the function.
 Save your program as ex10.py.
 
 """
+
+#should ask the user for a high and low value before running the function.
+#value = input(int(Enter a value betwwen 0(low) and 100(high)))
+
+
+#function
+def FizzBuzz (low,high):
+    for num in range(low,high):
+        if num%3==0 and num%5==0:
+            print("FizzBuzz")
+        elif num%3==0:
+            print("Fizz")
+        elif num%5==0:
+             print("Buzz")
+        else:
+            print(num)
+
+FizzBuzz(1,100)
