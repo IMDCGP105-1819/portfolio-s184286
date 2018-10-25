@@ -41,25 +41,24 @@ Save your work as ex7.py and commit regularly to GitHub.
 
 
 """
-
-#inputs
-
-annual_salary=float(input("Enter your annual salary:"))                                     # income - yr value
-portion_saved=float(input("Enter the percent of your salary to save, as a decimal: "))      # *10% monthly savings
-total_cost=float(input("Enter the cost of your dream home:"))                               # property value
+annual_salary=float(input("Enter your annual salary:"))                                    
+portion_saved=float(input("Enter the percent of your salary to save, as a decimal: "))     
+total_cost=float(input("Enter the cost of your dream home:"))                               
 
 # values
-monthly_salary=annual_salary/12                                                             # income - monthly value
+portion_deposit = 0.20 
+monthly_salary = (annual_salary/12)                                                            
+deposit = (total_cost/portion_deposit)                                                                      
+current_savings=0                                                                            
+r = 0.4
+months_required =0
+interest = (current_savings*r/12)
 
-portion_deposit= total_cost * 0.20                                                                        # 20% depoist value
-current_savings=0                                                                            #current savings value
-r= (current_savings * 0.4)/12
-months_required=0                                                                            # number of months required to save for a depoist.
+# number of months required to save for a depoist.
 
 
 #sum
-while(current_savings< total_cost * portion_deposit):
-    current_savings+=monthy_salary*portion_saved
-    current_savings+=current_savings*r/12
+while(current_savings < deposit):
+    current_savings+=(monthly_salary+interest)
     months_required+=1
-print(f"Total number of months required to save for a depoist: {months_required}")             # final output.
+print("Number of months: " , months_required)
