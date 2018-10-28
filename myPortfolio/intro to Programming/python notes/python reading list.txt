@@ -1,0 +1,5 @@
+
+https://docs.python.org/3.6/library/stdtypes.html
+
+
+https://docs.python.org/3/library/functions.html#input
