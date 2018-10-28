@@ -1,0 +1,74 @@
+//python strings:
+
+\n = Line Feed.
+\r = Carriage Return
+\r\n Carraige Return + Line Feed
+
+
+
+
+
+
+python, control flow:
+
+// if, elif, else statement:
+
+if x=? :
+	print("...")
+elif x==?:
+	print("...)
+elif x==?:
+	print("...)
+else:
+	print("..)
+
+// for statements
+
+xyz = [ 'A', 'B','C']
+
+for x in xyz:
+	print(x, len(x))
+
+A 1
+B 1
+C 1
+
+// the range() Function
+
+for i in range(5):
+	print(i)
+
+0
+1
+2
+3
+4
+
+// range() with values:
+
+for i in range(5,10):
+	print(i)
+
+5,6,7,8,9
+
+// defining functions
+
+	def myFunction(n):
+
+		x,y =0,1
+
+		while x < n:
+			print(x, ...)
+	print()
+# call the created function
+
+myFunction()
+
+
+
+	
+
+
+
+
+ 

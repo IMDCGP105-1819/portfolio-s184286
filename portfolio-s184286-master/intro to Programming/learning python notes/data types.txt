@@ -1,0 +1,73 @@
+https://docs.python.org/3.6/library/stdtypes.html#numeric-types-int-float-complex
+
+4. Built-in Types¶
+The following sections describe the standard types that are built into the interpreter.
+The principal built-in types are numerics, sequences, mappings, classes, instances and exceptions.
+Some collection classes are mutable. The methods that add, subtract, or rearrange their members in place, and don’t return a specific item, never return the collection instance itself but None.
+Some operations are supported by several object types; in particular, practically all objects can be compared, tested for truth value, and converted to a string (with the repr() function or the slightly different str() function). The latter function is implicitly used when an object is written by the print() function.
+
+4.1. Truth Value Testing
+Any object can be tested for truth value, for use in an if or while condition or as operand of the Boolean operations below.
+By default, an object is considered true unless its class defines either a __bool__() method that returns False or a __len__() method that returns zero, when called with the object. [1] Here are most of the built-in objects considered false:
+
+constants defined to be false: None and False.
+zero of any numeric type: 0, 0.0, 0j, Decimal(0), Fraction(0, 1)
+empty sequences and collections: '', (), [], {}, set(), range(0)
+Operations and built-in functions that have a Boolean result always return 0 or False for false and 1 or True for true, unless otherwise stated. (Important exception: the Boolean operations or and and always return one of their operands.)
+
+---
+
+4.2 Boolean Operations -and, or not
+
+4.3 Comparisons
+
+4.4 Numeric Types - int, float, complex
+
+	4.4.1 Bitwise operations on integer types
+	4.4.2 Additional methods on integer types
+	4.4.3 additional methods on float
+	4.4.4 hashing of numeric types
+
+4.5 Iterator Types
+	4.5.1 generator Types
+
+4.6 Sequence Types - list, tuple, range
+	4.6.1 Common Sequence Operations
+	4.6.2 Immutable Sequence Types
+	4.6.3 Mutable Sequence Types
+	4.6.4 Lists, Tuples, Ranges
+
+4.7. Text Sequence Type — str
+	4.7.1. String Methods
+	4.7.2. printf-style String Formatting
+
+4.8. Binary Sequence Types — bytes, bytearray, memoryview
+	4.8.1. Bytes Objects
+	4.8.2. Bytearray Objects
+	4.8.3. Bytes and Bytearray Operations
+	4.8.4. printf-style Bytes Formatting
+	4.8.5. Memory Views
+
+4.9. Set Types — set, frozenset
+
+4.10. Mapping Types — dict
+	4.10.1. Dictionary view objects
+
+4.11. Context Manager Types
+
+4.12. Other Built-in Types
+	4.12.1. Modules
+	4.12.2. Classes and Class Instances
+	4.12.3. Functions
+	4.12.4. Methods
+	4.12.5. Code Objects
+	4.12.6. Type Objects
+	4.12.7. The Null Object
+	4.12.8. The Ellipsis Object
+	4.12.9. The NotImplemented Object
+	4.12.10. Boolean Values
+	4.12.11. Internal Objects
+
+4.13. Special Attributes
+
+
