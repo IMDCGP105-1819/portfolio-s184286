@@ -1,3 +1,5 @@
+# write a program that will help you calculate how long it will take you to save up for a deposit,
+
 
 annual_salary=float(input("Enter your annual salary:"))                                    
 portion_saved=float(input("Enter the percent of your salary to save, as a decimal: "))     
