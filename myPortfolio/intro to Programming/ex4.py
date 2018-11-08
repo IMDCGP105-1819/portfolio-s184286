@@ -53,3 +53,9 @@ total = my_age + my_height + my_weight
 print(f"If I add {my_age}, {my_height} and {my_weight} I get {total}")
 
 # Write some variables that convert from inches and pounds into centimetres and kilograms, do the math in Python – don’t hard code the values
+
+
+x = int(input("please enter a number(decimal): "))
+print("your number is", round(x / 2.54,2), "inches")
+print("your number is", round(x / 2.205,2), "kilograms") 
+
