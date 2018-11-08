@@ -1,22 +1,4 @@
-# replace these with your own values!
 
-"""
-When we use a statement with a single equal (=) sign, we are assigning some data to a variable – we are giving it a name. What happens if you use two equal signs next to each other (==)? 
-
-Python provides several built-in data types: 
-
-• boolean 
-  o represented by True and False and nothing else. 
-• int, float and complex numbers. 
-• strings  
-  o Everything we have used in our “print” statements are strings 
-  o We can assign strings to variables! 
-   test_string = “this is a string” 
-  
-There are several others, but they can wait for the time being. 
-
-Create a new file and save it as ex4.py – enter the following code:
-"""
 
 my_name = 'R Miah'
 
