@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Multimedia</title>
+</head>
+
+
+
+<jquery>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="script.js"></script>
+    <script src="js/speakClient.js"></script>
+
+    <body>
+
+        <!-- Kripken speakClient.-->
+
+        <div class="input">
+            <form onsubmit="doChat()">
+                <input type="text" />
+                <button type="submit">Chat!</button>
+            </form>
+        </div>
+        <div id="audio"></div>
+
+        
+
+        <button id="Button1">Event 1</button> <!-- add EventListener, media play back buttons. -->
+        <button id="Button2">Event 2</button>
+        <button id="Button3">Event 3</button>
+        <button id="Button4">Event 4</button>
+        <button id="Button5">Event 5</button>
+        <button id="Button6">Event 6</button>
+
+        <hr />
+
+
+        <div class="">
+
+            <audio controls>
+                <source src="  .mp3" type="audio/mp3">
+                <source src="  .ogg" type="audio/ogg">
+                <p> Your browser does not support HTML5 audio. </p>
+            </audio>
+
+            <hr />
+
+            <video controls autopplay loop muted poster="poster.png">
+                <source src=" .webm" type="video/webm">
+                <source src=" .mp4" type="video/mp4">
+                <track kind="subtitles" src="subs.vtt" srclang="en">
+                <!-- fallback content here -->
+                <p>Your browser doesn't support HTML5 video. Here is a <a href="  .mp4">link to the video</a> instead.</p>
+            </video>
+
+            <video controls ><source src="City.mp4" type="video/mp4"></video>
+            <video controls ><source src="Earth.mp4" type="video/mp4"></video>
+            <video controls ><source src="Matrix.mp4" type="video/mp4"></video>
+            <video controls ><source src="People.mp4" type="video/mp4"></video>
+
+            <div class="">
+                <button class="play" data-icon="P" aria-label="play pause toggle"></button><button class="stop" data-icon="S" aria-label="stop"></button>
+                <div class="timer">
+                    <div></div>
+                    <span aria-label="timer">00:00</span>
+                </div>
+                <button class="rwd" data-icon="B" aria-label="rewind"></button>
+                <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+            </div>
+        </div>
+
+
+
+
+
+    </body>
+
+</html>
