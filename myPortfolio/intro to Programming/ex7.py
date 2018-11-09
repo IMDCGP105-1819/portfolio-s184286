@@ -8,9 +8,8 @@ total_cost=float(input("Enter the cost of your dream home:"))
 
     # values
 
-portion_deposit = 0.20 
 monthly_salary = (annual_salary/12)                                                            
-deposit = (total_cost/portion_deposit)                                                                      
+deposit = (total_cost/portion_saved)                                                                      
 current_savings=0                                                                            
 r = 0.04
 months_required =0
