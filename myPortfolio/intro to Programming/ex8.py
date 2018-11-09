@@ -11,7 +11,7 @@ semi_annual_raise=float(input("Enter semi annual raise as a decimal percentage:"
 monthly_salary = ((annual_salary/12)+(semi_annual_raise/100*6))                                 // added to salary sum (..converted from % to decimal)                             
 deposit = (total_cost/portion_deposit)                                                                      
 current_savings=0                                                                            
-r = 0.4
+r = 0.04
 months_required =0
 interest = (current_savings*r/12)
 
