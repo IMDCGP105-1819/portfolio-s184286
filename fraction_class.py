@@ -23,25 +23,22 @@ class Fraction:				# implement a "fraction" class, it should provide the followi
 
  defining math functions
 
-    def addition(self, other):  
+    def add(self, other):  
         return self.num + self.denom  # addition (returns a new fraction representing the result of the addition)
 
 
-    def substraction(self,other)  
-        minus x-y
-        return("..new faction")  # substraction (returns a new fraction representing the result of the substraction)
+    def sub(self,other)  
+        return self.num - self.denom  # substraction (returns a new fraction representing the result of the substraction)
 
-    def multipilcation(self,other)  
-        multiplication x*y 
-        return("..new faction")  # multiplication (returns a new fraction representing the result of the multiplication)
+    def multiply(self,other)  
+        return self.num * self.denom  # multiplication (returns a new fraction representing the result of the multiplication)
 
-    def division(self,other)  
-        divide x/y
-        return("..new faction")  # division (returns a new fraction representing the result of the division)    
+    def divide(self,other)  
+        return self.num / self.denom  # division (returns a new fraction representing the result of the division)    
 
     def inverse(self,other)  
         inverse x!y
-        return("..new faction")  # inverse (returns a new fraction representing the result of the inverse)	
+        return self.num ! self.denom  # inverse (returns a new fraction representing the result of the inverse)	
 
 	try:
 		print(fraction)
@@ -56,11 +53,11 @@ class Fraction:				# implement a "fraction" class, it should provide the followi
 
 # calling the math functions
 
-add_fraction = fraction.add(self.num,sef.denom)
-minus_fraction = 
-multiply_fraction =
-division_fraction = 
-inverse_fraction = 
+add_fraction = fraction.add(self.num,self.denom)
+minus_fraction =fraction.sub(self.num, self.denom) 
+multiply_fraction =fraction.multiply(self.num, self.denom)
+division_fraction = fraction.divide(self.num, self.denom)
+inverse_fraction = fraction.inverse(self.num, self.denom)
 
 
 
@@ -68,8 +65,8 @@ printing to output..
 
 
 
-print("Sum of Addition:")
-print("Sum of Subtraction:")
-print("Sum of Division:" )
-print("Sum of Multiply:" )
-print("Sum of Inverse:")
+print("Sum of Addition:" .add())
+print("Sum of Subtraction:" .sub())
+print("Sum of Division:" .multiply())
+print("Sum of Multiply:" .divide())
+print("Sum of Inverse:" .inverse())
