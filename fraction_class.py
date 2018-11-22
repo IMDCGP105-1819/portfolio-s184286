@@ -48,7 +48,10 @@ class Fraction:				# implement a "fraction" class, it should provide the followi
 		print("NameError")
 
 
+# instance of the fraction class
 
+fraction = Fraction(2, 3)
+fraction.add(Fraction(1,2))
 
 
 # calling the math functions
